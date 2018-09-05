@@ -5,12 +5,12 @@ The official STAT 19000 GitHub repository
 - Class time: Thursdays at 5:00 -- 5:50 PM @ Hillenbrand dining court atrium
 
 ## Table of Contents
-
 - [Create a GitHub account](#create-a-github-account)
 - [Homework guidelines](#homework-guidelines)
 - [How to submit assignments](#how-to-submit-assignments)
 - [Grading guidelines](#grading-guidelines)
 - [Office hours](#office-hours)
+
 
 ## Create a GitHub Account
 If you already have a GitHub account, do not worry about making a new one-- just skip this part!
@@ -45,7 +45,6 @@ You are now the proud owner of a GitHub account! The next step is to add your na
 
 
 ## Homework guidelines
-
 - We **insist** that everyone document sources of help during the projects.
 	- It is **not** OK to copy-and-paste code from classmates or from the web.
 	- If a classmate or a website is helpful to you, that is OK as long as you document the source of help, and as long as you still create your own solution and make your own individual comments about the code.
@@ -85,8 +84,8 @@ A sample of how we want the homework to be formatted in the document is shown be
 
 Continue to the [next section](#how-to-submit-assignments) to learn how to submit your work for grading
 
-## How to submit assignments
 
+## How to submit assignments
 ### For first-time submissions
 - Check your email inbox for a repository invite
     - If you can't find an invite, navigate to https://github.com/thedatamine/FIRSTNAME-LASTNAME
@@ -108,12 +107,13 @@ Continue to the [next section](#how-to-submit-assignments) to learn how to submi
 
 If all went well, you should now see your submitted work in your assignment repository!
 
-## Grading guidelines
 
+## Grading guidelines
 - Each project will be out of 10 points
 - All grades will be posted on [Blackboard](https://mycourses.purdue.edu/)
 
 Project deadlines are subject to change if the majority of individuals have not finished the project. Once a project deadline has passed however, we will reduce by 10 percent per day from the individuals who have not submitted their project solutions.
+
 
 ## Office hours
 Detailed office hours and contact information can be found [here](http://www.stat.purdue.edu/datamine/19000/)
