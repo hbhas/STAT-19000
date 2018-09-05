@@ -46,9 +46,16 @@ You are now the proud owner of a GitHub account! The next step is to add your na
 
 ## Homework guidelines
 
-We **insist** that everyone document sources of help during the projects. It is **not** OK to copy-and-paste code from classmates or from the web. If a classmate or a website is helpful to you, that is OK as long as you document the source of help, and as long as you still create your own solution and make your own individual comments about the code. It is OK to help each other, but comprehending the material in this class fully is critical.
+- We **insist** that everyone document sources of help during the projects.
+	- It is **not** OK to copy-and-paste code from classmates or from the web.
+	- If a classmate or a website is helpful to you, that is OK as long as you document the source of help, and as long as you still create your own solution and make your own individual comments about the code.
+	- It is OK to help each other, but comprehending the material in this class fully is critical.
 
-For projects 1 and 2, the assignments will submitted as text documents (.txt) (Do NOT submit a Microsoft Word file.) Text documents can be created on the Scholar cluster by using one of several text editors. The easiest of these to use is gedit, but nano, emacs, and vi (my favorite) are also options. To open gedit, either find it in the Applications menu or simply type gedit in the terminal.
+- For projects 1 and 2, the assignments will submitted as text documents (.txt) (Do NOT submit a Microsoft Word file.)
+	- Text documents can be created on the Scholar cluster by using one of several text editors
+		- The easiest of these to use is gedit, but nano, emacs, and vi (my favorite) are also options.
+		- To open gedit, either find it in the Applications menu or simply type gedit in the terminal.
+
 A sample of how we want the homework to be formatted in the document is shown below.
 ```
 2a.  Use the ls command to learn which of the resulting .csv files is biggest in
@@ -69,7 +76,10 @@ A sample of how we want the homework to be formatted in the document is shown be
 	The most lines are in 2007.csv with 7453216 lines.
 ```
 
-Please copy the question exactly from the problem set, and add **solutions with comments** (explain what the code is doing in the comments). Paste the output of the command into the document below the solution (if more than 10 lines, please just give me either the first or last 10 lines to make the solutions more readable). Write a short sentence explaining the output in the context of the problem.
+- Please **copy the question exactly from the problem set**, and **add solutions with comments** (explain what the code is doing in the comments).
+- Paste the output of the command into the document below the solution.
+	- If more than 10 lines, please provide the first or last 10 lines to make the solutions more readable.
+	- Write a short sentence explaining the output in the context of the problem.
 
 > The projects later in the semester (after the first few weeks) will be written in RMarkdown. A similar format will be expected on those as well. We will send out an email after the class goes over RMarkdown with a sample of what a project in RMarkdown should look like. 
 
@@ -103,7 +113,7 @@ If all went well, you should now see your submitted work in your assignment repo
 - Each project will be out of 10 points
 - All grades will be posted on [Blackboard](https://mycourses.purdue.edu/)
 
-Project deadlines are subject to change if the majority of individuals have not finished the project. Once a project deadline has passed however, we will reduce by 10 percent per day from the individuals who have not submitted their project solutions. 
+Project deadlines are subject to change if the majority of individuals have not finished the project. Once a project deadline has passed however, we will reduce by 10 percent per day from the individuals who have not submitted their project solutions.
 
 ## Office hours
 Detailed office hours and contact information can be found [here](http://www.stat.purdue.edu/datamine/19000/)
