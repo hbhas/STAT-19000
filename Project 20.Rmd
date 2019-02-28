@@ -1,0 +1,52 @@
+---
+title: "Untitled"
+author: "Hemali Bhas"
+date: "February 27, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+install.packages("XML")
+library(XML)
+xpathSApply(htmlParse(getURL("https://www.billboard.com/charts/hot-100/1976-10-13")),"//*/div[@class='chart-list-item__title']",xmlValue)
+xpathSApply(htmlParse(getURL("https://www.billboard.com/charts/hot-100-1976-10-13")),"//*/div[@class='chart-list-item__artist']",xmlValue)
+
+print("On the Hot 100 chart, from the day of your birth:  1a. Extract the titles of the songs ranked #2 through #100.")
+xpathSApply(htmlParse(getURL("https://www.billboard.com/charts/hot-100/1999-04-24")),"//*/div[@class='chart-list-item__title']", xmlValue)
+print("1b. Extract the artists for those 99 songs.")
+xpathSApply(htmlParse(getURL("https://www.billboard.com/charts/hot-100/1999-04-24")), "//*/div[@class='chart-list-item__artist']", xmlValue)
+print("1c. Extract the title of the number 1 song for that day.")
+xpathSApply(htmlParse(getURL("https://www.billboard.com/charts/hot-100/1999-04-24")),"//*/div[@class='chart-list-item__toptitle']", xmlValue)
+print("1d. Extract the artist for the number 1 song for that day.")
+xpathSApply(htmlParse(getURL("https://www.billboard.com/charts/hot-100/1999-04-24")), "//*/div[@class='chart-list-item__topartist']", xmlValue)
+print(2a. Extract the city where the National Park property for Catoctin Mountain is located.)
+install.packages("RCurl")
+library(rCurl)
+xpathSApply(html(getURL("https://www.nps.gov/abli/index.htm")), "//*/span[@itemprop='city']", xmlValue)
+print(2b. Extract the state where Catoctin Mountain is located.)
+xpathSApply(html(getURL("https://www.nps.gov/abli/index.htm")), "//*/span[@itemprop='state']", xmlValue)
+print(2c. Extract the zip code where Catoctin Mountain is located.)
+xpathSApply(html(getURL("https://www.nps.gov/abli/index.htm")), "//*/span[@itemprop='zipCode']", xmlValue)
