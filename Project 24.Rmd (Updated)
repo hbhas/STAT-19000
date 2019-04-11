@@ -1,0 +1,37 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+#Wrap your code from Project 23 into a function, and then scrape at least 100,000 pieces of data from any website.
+
+#This loads the libraries we need to obtain the data.
+library(XML)
+library(RCurl)
+#This wraps the code into a function that we can use to scrape the data.
+mytitlefunc <- function(x) {
+xpathSApply(htmlParse(getURL(paste0("https://www.imdb.com/title/tt", x, "/"))), "//*/div[@class='title_wrapper']/h1", xmlValue)
+}
+#This now runs the function and extracts the results for the movie "Jackie Brown (Tarantino)"
+mytitlefunc("0119396")
+#This runs the function and retuns the results for another three films.
+mytitlefunc(c("0110005", "0110006", "0110007", "0110008"))
+000001:100000
+#This runs a sequence of numbers using the string print function--it includes the "%" to print the variable, the "0" for padding the data with leading zeroes, "d" for digits, and the "7" for obtaining 7 digits instead of 6.
+sprintf("%d", 000001:100000)
+#This runs the function and scrapes 100,000 pieces of data from the imdb website.
+mytitlefunc(sprintf("%07d", 000001:100000))

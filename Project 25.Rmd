@@ -1,0 +1,53 @@
+---
+title: "Project 25"
+author: "Hemali Bhas"
+date: "April 11, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+#1a. Store the 100,000 pieces of data that you scraped in Project 24 into a data frame.
+
+myDF <- data.frame(mytitlefunc(sprintf("%07d", 000001:100000)))
+#1b. Save that data frame in  an xlsx file, for instance, using the write.xlsx function from the library "xlsx"
+install.packages("xlsx")
+library(xlsx)
+write.xlsx(myDF, file="myworkbook.xlsx", sheetName="Movies")
+#2a.  Find the name of the director of the first movie from this website.
+xpathSApply(htmlParse(getURL("https://www.imdb.com/title/tt000001/")), "//*/meta[@name='director']", xmlGetAttr, "content")
+#2b.  Find the names of the actors from the first movie mentioned on this website.
+xpathSApply(htmlParse(getURL("https://www.imdb.com/title/tt000001/")), "//*/meta[@name='actors']", xmlGetAttr, "content")
+#2c.  Find the name of the first movie mentioned on this website.
+xpathSApply(htmlParse(getURL("https://www.imdb.com/title/tt000001/")), "//*/meta[@name='title']", xmlGetAttr, "content")
+#3a-c. Answer the 3 questions above by making 3 visualiations from the data assembled.
+install.packages("tidyverse")
+library(tidyverse)
+ggplot(data = director) +
+  geom_point(mapping = aes(x = movie, y = director))
+ggplot(data = actors) +
+  geom_point(mapping = aes(x = movie, y = actors))
+ggplot(data = title) +
+  geom_point(mapping = aes(x = movie, y = title))
